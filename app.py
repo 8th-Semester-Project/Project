@@ -2,7 +2,7 @@ from flask import Flask, render_template, request
 import numpy as np
 import pickle
 
-#bitcoin_model = pickle.load(open('Models/bitcoinModel.pkl', 'rb'))
+bitcoin_model = pickle.load(open('Models/bitcoin_classifier.pkl', 'rb'))
 gold_model = pickle.load(open('Models/GoldPricePrediction.pkl', 'rb'))
 car_model = pickle.load(open('Models/CarPricePrediction.pkl', 'rb'))
 house_model = pickle.load(open('Models/HousePricePrediction.pkl', 'rb'))
@@ -54,6 +54,17 @@ def predict():
             my_prediction = gold_model.predict(data)
             
             return render_template('result.html', prediction = my_prediction)
+        
+        if(len([float(x) for x in request.form.values()])==3):
+            openclose = float(request.form['openclose'])
+            lowhigh = float(request.form['lowhigh'])
+            quarterend = float(request.form['quarterend'])
+            
+            
+            data = np.array([[quarterend,openclose,lowhigh]])
+            my_prediction = bitcoin_model.predict(data)
+            
+            return render_template('bitcoin_result.html', prediction = my_prediction)
         
         elif(len([float(x) for x in request.form.values()])==5):
             presentprice = float(request.form['presentprice'])
