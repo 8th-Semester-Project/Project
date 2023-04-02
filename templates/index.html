@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>FinGuide</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
+  <meta property="og:title" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="">
+
+  <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="">
+
+  <!-- Favicon -->
+  <link href="../static/img/favicon.ico" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="../static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="../static/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="../static/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- Page Content
+    ================================================== -->
+  <!-- Hero -->
+
+  <section class="hero">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-12">
+          <a class="hero-brand" href="index.html" title="Home"><img alt="Logo" src="../static/img/logo_new_new.png" width="250" height="60"></a>
+        </div>
+      </div>
+
+      <div class="col-md-12">
+        <h1>
+            Your investments guide
+          </h1>
+
+        <p class="tagline">
+          Predict the costs of assets and plan a financial secured future
+        </p>
+        <a class="btn btn-full" href="#about">Get Started Now</a>
+      </div>
+    </div>
+
+  </section>
+  <!-- /Hero -->
+
+  <!-- Header -->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <a href="index.html"><img src="../static/img/logo_new_new.png" alt="" title="" /></img></a>
+        <!-- Uncomment below if you prefer to use a text image -->
+        <!--<h1><a href="#hero">Bell</a></h1>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#features">Features</a></li>
+        </ul>
+      </nav>
+      <!-- #nav-menu-container -->
+
+      <nav class="nav social-nav pull-right d-none d-lg-inline">
+        <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> <a href="#"><i class="fa fa-envelope"></i></a>
+      </nav>
+    </div>
+  </header>
+  <!-- #header -->
+
+  <!-- About -->
+
+  <section class="about" id="about">
+    <div class="container text-center">
+      <h2>
+          About FinGuide
+        </h2>
+
+      <p>
+        FinGuide offers you a platform to obtain the costs of acquiring important assets based on your preferance. It is a one-stop solution for predicting, planning and preparing for a secure future.
+      </p>
+
+    </div>
+  </section>
+  <!-- /About -->
+  
+  <!-- Features -->
+
+  <section class="features" id="features">
+    <div class="container">
+      <h2 class="text-center">
+          Features
+        </h2>
+
+      <div class="row">
+        <div class="feature-col col-lg-4 col-xs-12">
+          <div class="card card-block text-center">
+            <div>
+              <div class="feature-icon">
+                <span class="fa fa-home" style="font: size 36px;"></span>
+              </div>
+            </div>
+
+            <div>
+              <h3>
+                  <a href="{{ url_for('house') }}">House Price</a>
+                </h3>
+
+              <p>
+                House price depends on many factors such as physical conditions, concept and location. 
+                Enter your preferences and get an estimate cost of your Dream Home!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-col col-lg-4 col-xs-12">
+          <div class="card card-block text-center">
+            <div>
+              <div class="feature-icon">
+                <span class="fa fa-car"></span>
+              </div>
+            </div>
+
+            <div>
+              <h3>
+                  <a href="{{ url_for('car') }}">Car Price</a>
+                </h3>
+
+              <p>
+                An estimated 18% of the world's population own a car. This prediction is highly useful for effectively determining the worthiness of the car using a variety of features.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-col col-lg-4 col-xs-12">
+          <div class="card card-block text-center">
+            <div>
+              <div class="feature-icon">
+                <span class="fa fa-bell"></span>
+              </div>
+            </div>
+
+            <div>
+              <h3>
+                  <a href="{{ url_for('loan') }}">Loan Approval Status</a>
+                </h3>
+
+              <p>
+                Loans are important for a number of reasons including investments, debt consolidation and business ventures. 
+Fill in our form to know about your loan eligibility status.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="feature-col col-lg-4 col-xs-12">
+          <div class="card card-block text-center">
+            <div>
+              <div class="feature-icon">
+                <span class="fa fa-heartbeat"></span>
+              </div>
+            </div>
+
+            <div>
+              <h3>
+                  <a href="{{ url_for('insurance') }}">Health Care Insurance</a>
+                </h3>
+
+              <p>
+                Only 38% of Indian population is covered under health insurance. With this you can get an estimate about your medical insurance cost.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-col col-lg-4 col-xs-12">
+          <div class="card card-block text-center">
+            <div>
+              <div class="feature-icon">
+                <span class="fa fa-database"></span>
+              </div>
+            </div>
+
+            <div>
+              <h3>
+                  <a href="{{ url_for('gold') }}">Gold Price</a>
+                </h3>
+
+              <p>
+                More than 75% of Indian households own gold in many different forms. This feature will you to determine the price of this valuable asset accurately.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-col col-lg-4 col-xs-12">
+          <div class="card card-block text-center">
+            <div>
+              <div class="feature-icon">
+                <span class="fa fa-btc"></span>
+              </div>
+            </div>
+
+            <div>
+              <h3>
+                  <a href="{{ url_for('bitcoin') }}">Bitcoin Security</a>
+                </h3>
+
+              <p>
+                Roughly 22% of the adult population own a share of Bitcoin. Answer some numeric questions to determine whether it is the right time for you to invest in Bitcoin or not.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /Features -->
+
+  <footer class="site-footer">
+    <div class="bottom">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-6 col-xs-12 text-lg-left text-center">
+            <p class="copyright-text">
+              © FinGuide
+            </p>
+            <div class="credits">
+              
+             Made by Sthiti, Tabishi, Sucheta</a>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-xs-12 text-lg-right text-center">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="index.html">Home</a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="#about">About Us</a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="#features">Features</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+  <a class="scrolltop" href="#"><span class="fa fa-angle-up"></span></a>
+
+
+  <!-- Required JavaScript Libraries -->
+  <script src="../static/lib/jquery/jquery.min.js"></script>
+  <script src="../static/lib/jquery/jquery-migrate.min.js"></script>
+  <script src="../static/lib/superfish/hoverIntent.js"></script>
+  <script src="../static/lib/superfish/superfish.min.js"></script>
+  <script src="../static/lib/tether/js/tether.min.js"></script>
+  <script src="../static/lib/stellar/stellar.min.js"></script>
+  <script src="../static/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../static/lib/counterup/counterup.min.js"></script>
+  <script src="../static/lib/waypoints/waypoints.min.js"></script>
+  <script src="../static/lib/easing/easing.js"></script>
+  <script src="../static/lib/stickyjs/sticky.js"></script>
+  <script src="../static/lib/parallax/parallax.js"></script>
+  <script src="../static/lib/lockfixed/lockfixed.min.js"></script>
+
+  <!-- Template Specisifc Custom Javascript File -->
+  <script src="../static/js/custom.js"></script>
+
+  <!--<script src="../static/contactform/contactform.js"></script>-->
+
+</body>
+</html>
