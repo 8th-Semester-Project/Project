@@ -1,38 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loan result</title>
-</head>
-<body>
-    <div class="container">
-        <div class="row">
-            <div class="owl-carousel owl-theme">
-                <div class="item item-third">
-                    {% if prediction==0 %}
-                     <div class="caption">
-                        <div class="col-md-offset-1 col-md-10">
-                            <h1>Sorry</h1>
-                            
-                            
-                        </div>
-                    </div> 
+  <head>
+  <title>FinGuide</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
 
-                    <!-- else -->
-                    {% elif prediction==1 %}
-                    <div class="caption">
-                        <div class="col-md-offset-1 col-md-10">
-                            <h1>Congratulations</h1>
-                            
-                            
-                        </div>
-                    </div>
-                    {% endif %}
-                </div>
-            </div>
-        </div>
+  <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
+  <meta property="og:title" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="">
+
+  <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="">
+
+  <!-- Favicon -->
+  <link href="../static/img/favicon.ico" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="../static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="../static/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="../static/css/style_new.css" rel="stylesheet">
+  
+  </head>
+  <body>
+    <!-- <img alt="Bell Logo" src="desktop19.jpg" width="1500" height="1000" /> -->
+
+    <!-- <section class="hero"> -->
+    <div class="main">
+      <!-- <a class="hero-brand" href="index.html" title="Home">Home Page</a> -->
     </div>
-</body>
+    
+    <div class="row">
+      <img src="../static/img/logo_new_new.png"/>
+    </div>
+    <div class="container">
+      <img src="../static/img/bg_image_new.jpg" />
+    </div>
+    <div class="column">
+        {% if prediction==0 %}
+        <!--<div class="caption">
+           <div class="col-md-offset-1 col-md-10">-->
+               <h1>Sorry</h1>
+               <h4>Its not a safe time to invest in cryptocurrency</h4>
+               
+           <!--</div>
+       </div>--> 
+
+       <!-- else -->
+       {% elif prediction==1 %}
+       <!--<div class="caption">
+           <div class="col-md-offset-1 col-md-10">-->
+               <h1>Congratulations</h1>
+               
+               
+           <!--</div>
+       </div>-->
+       {% endif %}
+    </div>
+    
+   
+    <!--<footer class="site-footer">
+      <div class="bottom">
+        <div class="container">
+          <div class="row-footer">
+              <p class="copyright-text">
+                © FinGuide
+              </p>
+              <div class="credits">
+               Made by Sthiti, Tabishi, Sucheta</a>
+              </div>
+  
+        </div>
+        </div>
+      </div>
+    </footer>-->
+  </body>
 </html>
