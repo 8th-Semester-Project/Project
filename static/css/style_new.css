@@ -133,7 +133,7 @@ h4 {
   bottom: 0;
   right: 0;
   left: 0;
-  background: url("bg_image_new.jpg") no-repeat center fixed;
+  background: url("../static/img/bg_image_new.jpg") no-repeat center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
